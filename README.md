@@ -10,4 +10,4 @@ python train.py --cfg experiments/basic.yaml
 
 ### Data can be downloaded from this link: 
 
-
+https://drive.google.com/file/d/1EragrPXcwfq4b3lWSQ9ZDwjLGOIjhLcD/view?usp=sharing
