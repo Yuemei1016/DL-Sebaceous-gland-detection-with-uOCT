@@ -1,0 +1,33 @@
+---
+#basic setting
+arch: 'resnet18'
+workers: 2
+print_freq: 1
+world_size: 1
+rank: 0
+dist_url: 'tcp://127.0.0.1:8889'
+dist_backend: 'nccl'
+seed: 4
+gpu: '0'
+multiprocessing_distributed: False
+#dataset
+image_sets: 'MOCT'
+num_cls: 1
+# train
+pretrained: True
+resume: 0
+batch_size: 256
+start_epoch: 0
+epochs: 60
+warmup: False
+warmup_lr: 0.1
+warmup_epoch: 20
+lr: 0.1
+lr_factor: 0.1
+lr_epoch: None
+lr_inter: 50
+momentum: 0.9
+weight_decay: 0.0001
+# Test
+evaluate: False
+vis: False
